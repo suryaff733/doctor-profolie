@@ -59,7 +59,7 @@ function StoriesPage() {
 
         <div className="mt-10 flex items-center gap-8">
           <div className="flex items-center gap-2">
-            <div className="flex text-amber-accent">
+            <div className="flex text-gold">
               {[...Array(5)].map((_, i) => <Star key={i} className="h-5 w-5 fill-current" />)}
             </div>
             <span className="font-display text-2xl text-foreground">4.4</span>
@@ -73,7 +73,7 @@ function StoriesPage() {
           {stories.map((s, i) => (
             <article key={i} className="relative rounded-2xl border border-border bg-card p-7 flex flex-col">
               <Quote className="h-8 w-8 text-primary/20 absolute top-6 right-6" />
-              <div className="flex text-amber-accent mb-4">
+              <div className="flex text-gold mb-4">
                 {[...Array(5)].map((_, j) => <Star key={j} className="h-4 w-4 fill-current" />)}
               </div>
               <p className="text-foreground/85 leading-relaxed">"{s.text}"</p>
@@ -91,7 +91,7 @@ function StoriesPage() {
         </div>
       </section>
 
-      <section className="bg-[var(--cream)] border-t border-border">
+      <section className="bg-[var(--surface)] border-t border-border">
         <div className="mx-auto max-w-7xl px-6 lg:px-10 py-20">
           <SectionHeading
             eyebrow="Why patients choose us"

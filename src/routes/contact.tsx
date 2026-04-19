@@ -103,7 +103,7 @@ function ContactPage() {
           </div>
           <a
             href="tel:09949337101"
-            className="inline-flex items-center gap-2 rounded-full bg-amber-accent text-foreground px-7 py-3.5 text-sm font-medium hover:opacity-90 transition"
+            className="inline-flex items-center gap-2 rounded-full bg-gold text-foreground px-7 py-3.5 text-sm font-medium hover:opacity-90 transition"
           >
             <Phone className="h-4 w-4" /> Call 099493 37101
           </a>

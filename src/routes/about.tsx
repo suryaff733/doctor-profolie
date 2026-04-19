@@ -95,7 +95,7 @@ function AboutPage() {
         </div>
       </section>
 
-      <section className="bg-[var(--cream)] border-y border-border">
+      <section className="bg-[var(--surface)] border-y border-border">
         <div className="mx-auto max-w-7xl px-6 lg:px-10 py-20 grid lg:grid-cols-2 gap-12 items-center">
           <div className="aspect-[16/10] rounded-3xl overflow-hidden shadow-[var(--shadow-card)]">
             <img src={clinicImg} alt="Clinic interior" width={1600} height={1024} loading="lazy" className="h-full w-full object-cover" />
