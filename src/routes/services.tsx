@@ -33,15 +33,16 @@ const services = [
 function ServicesPage() {
   return (
     <>
-      <section className="mx-auto max-w-7xl px-6 lg:px-10 pt-20 pb-12">
-        <div className="text-xs uppercase tracking-[0.22em] text-primary mb-4">Services</div>
-        <h1 className="font-display text-5xl md:text-6xl text-foreground leading-[1.05] max-w-3xl">
-          Specialist care, <span className="italic text-primary">end to end.</span>
-        </h1>
-        <p className="mt-6 text-lg text-muted-foreground max-w-2xl">
-          Every service is delivered personally by Dr. Nageshwar K — from the
-          first consultation to follow-up.
-        </p>
+      <section className="border-b border-border bg-[var(--gradient-hero)]">
+        <div className="mx-auto max-w-7xl px-6 lg:px-10 pt-20 pb-16">
+          <div className="text-[11px] uppercase tracking-[0.22em] text-primary mb-4">Services</div>
+          <h1 className="font-display text-4xl md:text-5xl lg:text-6xl text-foreground leading-[1.08] max-w-3xl">
+            Specialist care, end to end.
+          </h1>
+          <p className="mt-5 text-base text-muted-foreground max-w-2xl">
+            Every service is delivered personally by Dr. Nageshwar K — from the first consultation to follow-up.
+          </p>
+        </div>
       </section>
 
       <section className="mx-auto max-w-7xl px-6 lg:px-10 py-12">

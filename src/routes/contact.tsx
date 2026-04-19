@@ -23,14 +23,16 @@ export const Route = createFileRoute("/contact")({
 function ContactPage() {
   return (
     <>
-      <section className="mx-auto max-w-7xl px-6 lg:px-10 pt-20 pb-12">
-        <div className="text-xs uppercase tracking-[0.22em] text-primary mb-4">Contact</div>
-        <h1 className="font-display text-5xl md:text-6xl text-foreground leading-[1.05] max-w-3xl">
-          Visit us, or just <span className="italic text-primary">call.</span>
-        </h1>
-        <p className="font-telugu text-lg text-muted-foreground mt-4">
-          నాగేశ్వర్ గ్యాస్ట్రో &amp; కాలేయ క్లినిక్
-        </p>
+      <section className="border-b border-border bg-[var(--gradient-hero)]">
+        <div className="mx-auto max-w-7xl px-6 lg:px-10 pt-20 pb-16">
+          <div className="text-[11px] uppercase tracking-[0.22em] text-primary mb-4">Contact</div>
+          <h1 className="font-display text-4xl md:text-5xl lg:text-6xl text-foreground leading-[1.08] max-w-3xl">
+            Visit us, or call.
+          </h1>
+          <p className="font-telugu text-base text-muted-foreground mt-3">
+            నాగేశ్వర్ గ్యాస్ట్రో &amp; కాలేయ క్లినిక్
+          </p>
+        </div>
       </section>
 
       <section className="mx-auto max-w-7xl px-6 lg:px-10 grid lg:grid-cols-12 gap-10 pb-24">

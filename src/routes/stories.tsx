@@ -51,20 +51,21 @@ const stories = [
 function StoriesPage() {
   return (
     <>
-      <section className="mx-auto max-w-7xl px-6 lg:px-10 pt-20 pb-16">
-        <div className="text-xs uppercase tracking-[0.22em] text-primary mb-4">Patient stories</div>
-        <h1 className="font-display text-5xl md:text-6xl text-foreground leading-[1.05] max-w-3xl">
-          In their own <span className="italic text-primary">words.</span>
-        </h1>
-
-        <div className="mt-10 flex items-center gap-8">
-          <div className="flex items-center gap-2">
-            <div className="flex text-gold">
-              {[...Array(5)].map((_, i) => <Star key={i} className="h-5 w-5 fill-current" />)}
+      <section className="border-b border-border bg-[var(--gradient-hero)]">
+        <div className="mx-auto max-w-7xl px-6 lg:px-10 pt-20 pb-16">
+          <div className="text-[11px] uppercase tracking-[0.22em] text-primary mb-4">Patient stories</div>
+          <h1 className="font-display text-4xl md:text-5xl lg:text-6xl text-foreground leading-[1.08] max-w-3xl">
+            In their own words.
+          </h1>
+          <div className="mt-8 flex items-center gap-6">
+            <div className="flex items-center gap-2">
+              <div className="flex text-gold">
+                {[...Array(5)].map((_, i) => <Star key={i} className="h-4 w-4 fill-current" />)}
+              </div>
+              <span className="font-display text-xl text-foreground">4.4</span>
             </div>
-            <span className="font-display text-2xl text-foreground">4.4</span>
+            <div className="text-sm text-muted-foreground">From 88 verified reviews</div>
           </div>
-          <div className="text-sm text-muted-foreground">From 88 verified reviews</div>
         </div>
       </section>
 
