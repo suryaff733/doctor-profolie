@@ -41,8 +41,8 @@ function HomePage() {
               Now accepting new patients
             </div>
             <h1 className="mt-6 font-display text-4xl md:text-5xl lg:text-6xl text-foreground leading-[1.08] tracking-tight">
-              Specialist Gastroenterology &amp;<br className="hidden md:block" />
-              Liver Care in Hyderabad.
+              Specialist Gastroenterology<br className="hidden md:block" />
+              {" & "}Liver Care in Hyderabad.
             </h1>
             <p className="font-telugu text-base text-muted-foreground mt-4">
               నాగేశ్వర్ గ్యాస్ట్రో &amp; కాలేయ క్లినిక్
