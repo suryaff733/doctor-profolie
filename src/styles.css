@@ -4,10 +4,10 @@
 
 @custom-variant dark (&:is(.dark *));
 
-@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@300;400;500;600;700&family=Noto+Sans+Telugu:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=Inter:wght@300;400;500;600;700&family=Noto+Sans+Telugu:wght@400;500;600&display=swap");
 
 @theme inline {
-  --font-display: "Fraunces", serif;
+  --font-display: "Source Serif 4", Georgia, serif;
   --font-sans: "Inter", system-ui, sans-serif;
   --font-telugu: "Noto Sans Telugu", "Inter", sans-serif;
 
@@ -37,69 +37,68 @@
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
-  --color-cream: var(--cream);
+  --color-surface: var(--surface);
   --color-ink: var(--ink);
-  --color-amber-accent: var(--amber-accent);
+  --color-gold: var(--gold);
 }
 
 :root {
-  --radius: 0.75rem;
+  --radius: 0.5rem;
 
-  /* Brand: deep teal + warm cream + amber */
-  --background: oklch(0.98 0.012 85);
-  --foreground: oklch(0.22 0.025 200);
+  /* Professional medical: deep navy + clinical white + restrained gold */
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.18 0.018 240);
 
-  --cream: oklch(0.96 0.018 85);
-  --ink: oklch(0.18 0.022 200);
+  --surface: oklch(0.98 0.005 240);
+  --ink: oklch(0.14 0.02 240);
 
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.22 0.025 200);
+  --card-foreground: oklch(0.18 0.018 240);
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.22 0.025 200);
+  --popover-foreground: oklch(0.18 0.018 240);
 
-  --primary: oklch(0.36 0.062 195);
-  --primary-foreground: oklch(0.98 0.012 85);
+  --primary: oklch(0.28 0.055 240);
+  --primary-foreground: oklch(0.99 0.005 240);
 
-  --secondary: oklch(0.94 0.02 85);
-  --secondary-foreground: oklch(0.28 0.04 200);
+  --secondary: oklch(0.96 0.008 240);
+  --secondary-foreground: oklch(0.22 0.04 240);
 
-  --muted: oklch(0.94 0.012 85);
-  --muted-foreground: oklch(0.48 0.02 200);
+  --muted: oklch(0.96 0.006 240);
+  --muted-foreground: oklch(0.46 0.02 240);
 
-  --accent: oklch(0.78 0.13 65);
-  --accent-foreground: oklch(0.22 0.04 60);
+  --accent: oklch(0.55 0.08 200);
+  --accent-foreground: oklch(0.99 0.005 240);
 
-  --amber-accent: oklch(0.74 0.14 60);
+  --gold: oklch(0.68 0.1 75);
 
   --destructive: oklch(0.55 0.2 25);
-  --destructive-foreground: oklch(0.98 0.012 85);
+  --destructive-foreground: oklch(0.99 0.005 240);
 
-  --border: oklch(0.88 0.015 90);
-  --input: oklch(0.9 0.012 90);
-  --ring: oklch(0.36 0.062 195);
+  --border: oklch(0.92 0.008 240);
+  --input: oklch(0.92 0.008 240);
+  --ring: oklch(0.28 0.055 240);
 
-  --chart-1: oklch(0.36 0.062 195);
-  --chart-2: oklch(0.74 0.14 60);
-  --chart-3: oklch(0.55 0.08 195);
-  --chart-4: oklch(0.65 0.1 60);
-  --chart-5: oklch(0.4 0.04 195);
+  --chart-1: oklch(0.28 0.055 240);
+  --chart-2: oklch(0.55 0.08 200);
+  --chart-3: oklch(0.68 0.1 75);
+  --chart-4: oklch(0.45 0.04 240);
+  --chart-5: oklch(0.7 0.04 240);
 
-  --gradient-hero: linear-gradient(135deg, oklch(0.96 0.018 85) 0%, oklch(0.92 0.03 75) 100%);
-  --gradient-primary: linear-gradient(135deg, oklch(0.36 0.062 195), oklch(0.28 0.05 200));
-  --gradient-accent: linear-gradient(135deg, oklch(0.78 0.13 65), oklch(0.7 0.15 50));
+  --gradient-hero: linear-gradient(180deg, oklch(0.99 0.005 240) 0%, oklch(0.97 0.008 240) 100%);
+  --gradient-primary: linear-gradient(135deg, oklch(0.28 0.055 240), oklch(0.22 0.05 245));
 
-  --shadow-soft: 0 1px 2px oklch(0.2 0.02 200 / 0.06), 0 8px 24px oklch(0.2 0.02 200 / 0.06);
-  --shadow-card: 0 2px 8px oklch(0.2 0.02 200 / 0.05), 0 20px 40px -20px oklch(0.2 0.02 200 / 0.12);
-  --shadow-elegant: 0 30px 60px -30px oklch(0.36 0.062 195 / 0.35);
+  --shadow-soft: 0 1px 2px oklch(0.18 0.02 240 / 0.04), 0 4px 12px oklch(0.18 0.02 240 / 0.04);
+  --shadow-card: 0 1px 3px oklch(0.18 0.02 240 / 0.06), 0 12px 32px -12px oklch(0.18 0.02 240 / 0.12);
+  --shadow-elegant: 0 20px 50px -25px oklch(0.28 0.055 240 / 0.3);
 
-  --sidebar: oklch(0.98 0.012 85);
-  --sidebar-foreground: oklch(0.22 0.025 200);
-  --sidebar-primary: oklch(0.36 0.062 195);
-  --sidebar-primary-foreground: oklch(0.98 0.012 85);
-  --sidebar-accent: oklch(0.94 0.02 85);
-  --sidebar-accent-foreground: oklch(0.28 0.04 200);
-  --sidebar-border: oklch(0.88 0.015 90);
-  --sidebar-ring: oklch(0.36 0.062 195);
+  --sidebar: oklch(0.99 0.005 240);
+  --sidebar-foreground: oklch(0.18 0.018 240);
+  --sidebar-primary: oklch(0.28 0.055 240);
+  --sidebar-primary-foreground: oklch(0.99 0.005 240);
+  --sidebar-accent: oklch(0.96 0.008 240);
+  --sidebar-accent-foreground: oklch(0.22 0.04 240);
+  --sidebar-border: oklch(0.92 0.008 240);
+  --sidebar-ring: oklch(0.28 0.055 240);
 }
 
 @layer base {
@@ -122,7 +121,7 @@
   h1, h2, h3, h4 {
     font-family: var(--font-display);
     font-weight: 500;
-    letter-spacing: -0.02em;
+    letter-spacing: -0.015em;
   }
 
   .font-telugu {
