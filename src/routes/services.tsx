@@ -33,22 +33,23 @@ const services = [
 function ServicesPage() {
   return (
     <>
-      <section className="mx-auto max-w-7xl px-6 lg:px-10 pt-20 pb-12">
-        <div className="text-xs uppercase tracking-[0.22em] text-primary mb-4">Services</div>
-        <h1 className="font-display text-5xl md:text-6xl text-foreground leading-[1.05] max-w-3xl">
-          Specialist care, <span className="italic text-primary">end to end.</span>
-        </h1>
-        <p className="mt-6 text-lg text-muted-foreground max-w-2xl">
-          Every service is delivered personally by Dr. Nageshwar K — from the
-          first consultation to follow-up.
-        </p>
+      <section className="border-b border-border bg-[var(--gradient-hero)]">
+        <div className="mx-auto max-w-7xl px-6 lg:px-10 pt-20 pb-16">
+          <div className="text-[11px] uppercase tracking-[0.22em] text-primary mb-4">Services</div>
+          <h1 className="font-display text-4xl md:text-5xl lg:text-6xl text-foreground leading-[1.08] max-w-3xl">
+            Specialist care, end to end.
+          </h1>
+          <p className="mt-5 text-base text-muted-foreground max-w-2xl">
+            Every service is delivered personally by Dr. Nageshwar K — from the first consultation to follow-up.
+          </p>
+        </div>
       </section>
 
       <section className="mx-auto max-w-7xl px-6 lg:px-10 py-12">
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
           {services.map((s) => (
-            <div key={s.title} className="rounded-2xl border border-border bg-card p-7 hover:shadow-[var(--shadow-card)] hover:-translate-y-1 transition-all duration-300">
-              <div className="h-12 w-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary mb-5">
+            <div key={s.title} className="rounded-sm border border-border bg-card p-7 hover:shadow-[var(--shadow-card)] hover:-translate-y-1 transition-all duration-300">
+              <div className="h-12 w-12 rounded-sm bg-primary/10 flex items-center justify-center text-primary mb-5">
                 <s.icon className="h-6 w-6" />
               </div>
               <h3 className="font-display text-xl text-foreground">{s.title}</h3>
@@ -78,7 +79,7 @@ function ServicesPage() {
         </div>
 
         <div className="mt-12">
-          <Link to="/contact" className="inline-flex items-center gap-2 rounded-full bg-primary text-primary-foreground px-7 py-3.5 text-sm font-medium hover:opacity-90 transition shadow-[var(--shadow-soft)]">
+          <Link to="/contact" className="inline-flex items-center gap-2 rounded-sm bg-primary text-primary-foreground px-6 py-3 text-sm font-medium hover:opacity-90 transition shadow-[var(--shadow-soft)]">
             Book your visit <ArrowRight className="h-4 w-4" />
           </Link>
         </div>

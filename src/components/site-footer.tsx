@@ -3,7 +3,7 @@ import { MapPin, Phone, Clock } from "lucide-react";
 
 export function SiteFooter() {
   return (
-    <footer className="mt-32 border-t border-border bg-[var(--cream)]">
+    <footer className="mt-24 border-t border-border bg-[var(--surface)]">
       <div className="mx-auto max-w-7xl px-6 lg:px-10 py-16 grid gap-12 md:grid-cols-4">
         <div className="md:col-span-2">
           <div className="font-display text-2xl text-foreground">

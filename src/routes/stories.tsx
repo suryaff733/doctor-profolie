@@ -51,29 +51,30 @@ const stories = [
 function StoriesPage() {
   return (
     <>
-      <section className="mx-auto max-w-7xl px-6 lg:px-10 pt-20 pb-16">
-        <div className="text-xs uppercase tracking-[0.22em] text-primary mb-4">Patient stories</div>
-        <h1 className="font-display text-5xl md:text-6xl text-foreground leading-[1.05] max-w-3xl">
-          In their own <span className="italic text-primary">words.</span>
-        </h1>
-
-        <div className="mt-10 flex items-center gap-8">
-          <div className="flex items-center gap-2">
-            <div className="flex text-amber-accent">
-              {[...Array(5)].map((_, i) => <Star key={i} className="h-5 w-5 fill-current" />)}
+      <section className="border-b border-border bg-[var(--gradient-hero)]">
+        <div className="mx-auto max-w-7xl px-6 lg:px-10 pt-20 pb-16">
+          <div className="text-[11px] uppercase tracking-[0.22em] text-primary mb-4">Patient stories</div>
+          <h1 className="font-display text-4xl md:text-5xl lg:text-6xl text-foreground leading-[1.08] max-w-3xl">
+            In their own words.
+          </h1>
+          <div className="mt-8 flex items-center gap-6">
+            <div className="flex items-center gap-2">
+              <div className="flex text-gold">
+                {[...Array(5)].map((_, i) => <Star key={i} className="h-4 w-4 fill-current" />)}
+              </div>
+              <span className="font-display text-xl text-foreground">4.4</span>
             </div>
-            <span className="font-display text-2xl text-foreground">4.4</span>
+            <div className="text-sm text-muted-foreground">From 88 verified reviews</div>
           </div>
-          <div className="text-sm text-muted-foreground">From 88 verified reviews</div>
         </div>
       </section>
 
       <section className="mx-auto max-w-7xl px-6 lg:px-10 pb-24">
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {stories.map((s, i) => (
-            <article key={i} className="relative rounded-2xl border border-border bg-card p-7 flex flex-col">
+            <article key={i} className="relative rounded-sm border border-border bg-card p-7 flex flex-col">
               <Quote className="h-8 w-8 text-primary/20 absolute top-6 right-6" />
-              <div className="flex text-amber-accent mb-4">
+              <div className="flex text-gold mb-4">
                 {[...Array(5)].map((_, j) => <Star key={j} className="h-4 w-4 fill-current" />)}
               </div>
               <p className="text-foreground/85 leading-relaxed">"{s.text}"</p>
@@ -91,7 +92,7 @@ function StoriesPage() {
         </div>
       </section>
 
-      <section className="bg-[var(--cream)] border-t border-border">
+      <section className="bg-[var(--surface)] border-t border-border">
         <div className="mx-auto max-w-7xl px-6 lg:px-10 py-20">
           <SectionHeading
             eyebrow="Why patients choose us"

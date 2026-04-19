@@ -26,16 +26,18 @@ export const Route = createFileRoute("/about")({
 function AboutPage() {
   return (
     <>
-      <section className="mx-auto max-w-7xl px-6 lg:px-10 pt-20 pb-16">
-        <div className="text-xs uppercase tracking-[0.22em] text-primary mb-4">About</div>
-        <h1 className="font-display text-5xl md:text-6xl text-foreground leading-[1.05] max-w-4xl">
-          Two decades of expertise. <span className="italic text-primary">Always rooted in care.</span>
-        </h1>
+      <section className="border-b border-border bg-[var(--gradient-hero)]">
+        <div className="mx-auto max-w-7xl px-6 lg:px-10 pt-20 pb-16">
+          <div className="text-[11px] uppercase tracking-[0.22em] text-primary mb-4">About</div>
+          <h1 className="font-display text-4xl md:text-5xl lg:text-6xl text-foreground leading-[1.08] max-w-4xl">
+            Two decades of expertise. Always rooted in care.
+          </h1>
+        </div>
       </section>
 
       <section className="mx-auto max-w-7xl px-6 lg:px-10 grid lg:grid-cols-12 gap-14 items-start">
         <div className="lg:col-span-5">
-          <div className="aspect-[4/5] rounded-3xl overflow-hidden shadow-[var(--shadow-card)]">
+          <div className="aspect-[4/5] rounded-sm overflow-hidden shadow-[var(--shadow-card)]">
             <img src={doctorImg} alt="Dr. Nageshwar K" width={1024} height={1280} loading="lazy" className="h-full w-full object-cover" />
           </div>
         </div>
@@ -66,7 +68,7 @@ function AboutPage() {
               { icon: Briefcase, label: "Experience", value: "27 years" },
               { icon: Award, label: "Registration", value: "APMC · 44317" },
             ].map((s) => (
-              <div key={s.label} className="rounded-2xl border border-border bg-card p-5">
+              <div key={s.label} className="rounded-sm border border-border bg-card p-5">
                 <s.icon className="h-5 w-5 text-primary" />
                 <div className="text-xs uppercase tracking-wider text-muted-foreground mt-3">{s.label}</div>
                 <div className="font-display text-lg text-foreground mt-1">{s.value}</div>
@@ -95,9 +97,9 @@ function AboutPage() {
         </div>
       </section>
 
-      <section className="bg-[var(--cream)] border-y border-border">
+      <section className="bg-[var(--surface)] border-y border-border">
         <div className="mx-auto max-w-7xl px-6 lg:px-10 py-20 grid lg:grid-cols-2 gap-12 items-center">
-          <div className="aspect-[16/10] rounded-3xl overflow-hidden shadow-[var(--shadow-card)]">
+          <div className="aspect-[16/10] rounded-sm overflow-hidden shadow-[var(--shadow-card)]">
             <img src={clinicImg} alt="Clinic interior" width={1600} height={1024} loading="lazy" className="h-full w-full object-cover" />
           </div>
           <div>
