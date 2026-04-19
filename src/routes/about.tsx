@@ -26,11 +26,13 @@ export const Route = createFileRoute("/about")({
 function AboutPage() {
   return (
     <>
-      <section className="mx-auto max-w-7xl px-6 lg:px-10 pt-20 pb-16">
-        <div className="text-xs uppercase tracking-[0.22em] text-primary mb-4">About</div>
-        <h1 className="font-display text-5xl md:text-6xl text-foreground leading-[1.05] max-w-4xl">
-          Two decades of expertise. <span className="italic text-primary">Always rooted in care.</span>
-        </h1>
+      <section className="border-b border-border bg-[var(--gradient-hero)]">
+        <div className="mx-auto max-w-7xl px-6 lg:px-10 pt-20 pb-16">
+          <div className="text-[11px] uppercase tracking-[0.22em] text-primary mb-4">About</div>
+          <h1 className="font-display text-4xl md:text-5xl lg:text-6xl text-foreground leading-[1.08] max-w-4xl">
+            Two decades of expertise. Always rooted in care.
+          </h1>
+        </div>
       </section>
 
       <section className="mx-auto max-w-7xl px-6 lg:px-10 grid lg:grid-cols-12 gap-14 items-start">
