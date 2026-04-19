@@ -26,10 +26,15 @@ export function SiteFooter() {
           <ul className="space-y-3 text-sm text-foreground/80">
             <li className="flex gap-3">
               <MapPin className="h-4 w-4 mt-0.5 text-primary shrink-0" />
-              <span>
+              <a
+                href="https://maps.app.goo.gl/UoF5dBZSc6yf5x4J9"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-primary transition-colors"
+              >
                 Lane opposite Bhashyam School, Prashanthi Nagar,
                 Vanasthalipuram, Telangana 500070
-              </span>
+              </a>
             </li>
             <li className="flex gap-3">
               <Phone className="h-4 w-4 mt-0.5 text-primary shrink-0" />

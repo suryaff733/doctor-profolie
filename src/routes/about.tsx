@@ -3,6 +3,7 @@ import doctorImg from "@/assets/doctor-portrait.jpg";
 import clinicImg from "@/assets/clinic-interior.jpg";
 import { SectionHeading } from "@/components/section-heading";
 import { GraduationCap, Award, Briefcase } from "lucide-react";
+import { Reveal } from "@/components/reveal";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -11,7 +12,7 @@ export const Route = createFileRoute("/about")({
       {
         name: "description",
         content:
-          "Dr. Nageshwar K, MBBS, DM (Gastroenterology) — 27 years of experience treating digestive and liver conditions in Hyderabad.",
+          "Dr. Nageshwar K, MBBS, MD, DM (Gastroenterology) — 27 years of experience treating digestive and liver conditions in Hyderabad.",
       },
       { property: "og:title", content: "About Dr. Nageshwar K" },
       {
@@ -25,7 +26,7 @@ export const Route = createFileRoute("/about")({
 
 function AboutPage() {
   return (
-    <>
+    <div className="overflow-hidden">
       <section className="border-b border-border bg-[var(--gradient-hero)]">
         <div className="mx-auto max-w-7xl px-6 lg:px-10 pt-20 pb-16">
           <div className="text-[11px] uppercase tracking-[0.22em] text-primary mb-4">About</div>
@@ -35,19 +36,25 @@ function AboutPage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-6 lg:px-10 grid lg:grid-cols-12 gap-14 items-start">
+      <section className="mx-auto max-w-7xl px-6 lg:px-10 grid lg:grid-cols-12 gap-14 items-start py-20">
         <div className="lg:col-span-5">
-          <div className="aspect-[4/5] rounded-sm overflow-hidden shadow-[var(--shadow-card)]">
-            <img src={doctorImg} alt="Dr. Nageshwar K" width={1024} height={1280} loading="lazy" className="h-full w-full object-cover" />
-          </div>
+          <Reveal direction="right">
+            <div className="aspect-[4/5] rounded-sm overflow-hidden shadow-[var(--shadow-card)] bg-white animate-float-delayed">
+              <img src={doctorImg} alt="Dr. Nageshwar K" width={1024} height={1280} loading="lazy" className="h-full w-full object-cover" />
+            </div>
+          </Reveal>
         </div>
         <div className="lg:col-span-7 space-y-6 text-foreground/85 leading-relaxed">
+          <Reveal delay={100}>
           <p className="text-lg">
             Dr. Nageshwar K is a senior gastroenterologist practising in
-            Hyderabad. After completing his MBBS at Osmania Medical College in
-            1999, he went on to earn his DM in Gastroenterology from the same
-            institution in 2008.
+            Hyderabad. After completing his MBBS at Gandhi Medical College in
+            1999, he pursued his MD in General Medicine from Dr. NTR University of
+            Health Sciences in 2002, and later earned his DM in Gastroenterology
+            from Osmania Medical College in 2008.
           </p>
+          </Reveal>
+          <Reveal delay={200}>
           <p>
             Over a 27-year career, he has cared for thousands of patients with
             conditions ranging from common gastric complaints to complex liver
@@ -62,9 +69,12 @@ function AboutPage() {
             sees patients across Telangana and Andhra Pradesh.
           </p>
 
-          <div className="grid sm:grid-cols-3 gap-5 pt-6">
+          </Reveal>
+
+          <Reveal delay={300}>
+            <div className="grid sm:grid-cols-3 gap-5 pt-6">
             {[
-              { icon: GraduationCap, label: "Education", value: "MBBS, DM (Gastro)" },
+              { icon: GraduationCap, label: "Education", value: "MBBS, MD, DM (Gastro)" },
               { icon: Briefcase, label: "Experience", value: "27 years" },
               { icon: Award, label: "Registration", value: "APMC · 44317" },
             ].map((s) => (
@@ -72,9 +82,10 @@ function AboutPage() {
                 <s.icon className="h-5 w-5 text-primary" />
                 <div className="text-xs uppercase tracking-wider text-muted-foreground mt-3">{s.label}</div>
                 <div className="font-display text-lg text-foreground mt-1">{s.value}</div>
-              </div>
-            ))}
-          </div>
+                </div>
+              ))}
+            </div>
+          </Reveal>
         </div>
       </section>
 
@@ -82,10 +93,17 @@ function AboutPage() {
         <SectionHeading eyebrow="Career" title="A practice built on experience" />
         <div className="mt-12 border-l border-border pl-8 space-y-10 max-w-3xl">
           {[
-            { y: "2009 — Present", t: "Gastroenterologist", o: "Ozone Hospitals" },
-            { y: "2003 — 2007", t: "General Physician", o: "Global Hospitals" },
+            { y: "Present", t: "Consultant Gastroenterologist", o: "Krishnaveni Hospital, Hayat Nagar" },
+            { y: "Present", t: "Consultant Gastroenterologist", o: "Nageshwar Gastro & Liver Clinic, Vanasthalipuram" },
+            { y: "Past", t: "Senior Consultant Gastroenterologist", o: "Aware Global Hospitals, Hyderabad" },
+            { y: "Past", t: "Associate Prof & Visiting Consultant", o: "Kamineni Institute of Dental Sciences, Hyderabad" },
+            { y: "Past", t: "Consultant Gastroenterologist", o: "Medisys Hospitals, L B Nagar" },
+            { y: "Past", t: "Consultant Gastroenterologist", o: "Ozone Hospitals, Hyderabad" },
+            { y: "Past", t: "Consultant Gastroenterologist", o: "Orange Hospital, L B Nagar" },
+            { y: "2003 — 2007", t: "Consultant General Physician", o: "Global Hospitals, Hyderabad" },
             { y: "2008", t: "DM, Gastroenterology", o: "Osmania Medical College, Hyderabad" },
-            { y: "1999", t: "MBBS", o: "Osmania Medical College, Hyderabad" },
+            { y: "2002", t: "MD, General Medicine", o: "Dr. NTR University of Health Sciences, Vijayawada" },
+            { y: "1999", t: "MBBS", o: "Gandhi Medical College, Hyderabad" },
           ].map((e) => (
             <div key={e.y} className="relative">
               <span className="absolute -left-[37px] top-2 h-3 w-3 rounded-full bg-primary ring-4 ring-background" />
@@ -111,6 +129,6 @@ function AboutPage() {
           </div>
         </div>
       </section>
-    </>
+    </div>
   );
 }

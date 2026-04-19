@@ -3,6 +3,7 @@ import { Outlet, Link, createRootRoute, HeadContent, Scripts } from "@tanstack/r
 import appCss from "../styles.css?url";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
+import { CustomCursor } from "@/components/custom-cursor";
 
 function NotFoundComponent() {
   return (
@@ -44,6 +45,10 @@ export const Route = createRootRoute({
       { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [{ rel: "stylesheet", href: appCss }],
+    scripts: [
+      { src: "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" },
+      { src: "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" },
+    ],
   }),
   shellComponent: RootShell,
   component: RootComponent,
@@ -67,6 +72,7 @@ function RootShell({ children }: { children: React.ReactNode }) {
 function RootComponent() {
   return (
     <div className="min-h-screen flex flex-col bg-background">
+      <CustomCursor />
       <SiteHeader />
       <main className="flex-1">
         <Outlet />

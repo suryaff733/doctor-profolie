@@ -42,11 +42,16 @@ function ContactPage() {
               icon: MapPin,
               title: "Address",
               body: (
-                <>
+                <a
+                  href="https://maps.app.goo.gl/UoF5dBZSc6yf5x4J9"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-primary transition-colors"
+                >
                   Lane opposite Bhashyam School,<br />
                   Prashanthi Nagar, Vanasthalipuram,<br />
                   Telangana 500070
-                </>
+                </a>
               ),
             },
             {
@@ -96,7 +101,8 @@ function ContactPage() {
       </section>
 
       <section className="mx-auto max-w-7xl px-6 lg:px-10 pb-24">
-        <div className="rounded-sm bg-[var(--gradient-primary)] p-10 md:p-14 text-primary-foreground flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
+        <div className="rounded-sm bg-primary p-10 md:p-14 text-primary-foreground flex flex-col md:flex-row items-start md:items-center justify-between gap-8 shadow-xl relative overflow-hidden">
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-white/10 via-transparent to-transparent pointer-events-none" />
           <div>
             <h2 className="font-display text-3xl md:text-4xl">Need to speak with us today?</h2>
             <p className="mt-2 text-primary-foreground/85 text-sm md:text-base">
