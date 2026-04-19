@@ -47,8 +47,8 @@ function ServicesPage() {
       <section className="mx-auto max-w-7xl px-6 lg:px-10 py-12">
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
           {services.map((s) => (
-            <div key={s.title} className="rounded-2xl border border-border bg-card p-7 hover:shadow-[var(--shadow-card)] hover:-translate-y-1 transition-all duration-300">
-              <div className="h-12 w-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary mb-5">
+            <div key={s.title} className="rounded-sm border border-border bg-card p-7 hover:shadow-[var(--shadow-card)] hover:-translate-y-1 transition-all duration-300">
+              <div className="h-12 w-12 rounded-sm bg-primary/10 flex items-center justify-center text-primary mb-5">
                 <s.icon className="h-6 w-6" />
               </div>
               <h3 className="font-display text-xl text-foreground">{s.title}</h3>
@@ -78,7 +78,7 @@ function ServicesPage() {
         </div>
 
         <div className="mt-12">
-          <Link to="/contact" className="inline-flex items-center gap-2 rounded-full bg-primary text-primary-foreground px-7 py-3.5 text-sm font-medium hover:opacity-90 transition shadow-[var(--shadow-soft)]">
+          <Link to="/contact" className="inline-flex items-center gap-2 rounded-sm bg-primary text-primary-foreground px-6 py-3 text-sm font-medium hover:opacity-90 transition shadow-[var(--shadow-soft)]">
             Book your visit <ArrowRight className="h-4 w-4" />
           </Link>
         </div>

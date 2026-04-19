@@ -68,8 +68,8 @@ function ContactPage() {
               body: <a href="mailto:contact@nageshwarclinic.in" className="text-primary hover:underline">contact@nageshwarclinic.in</a>,
             },
           ].map((c) => (
-            <div key={c.title} className="rounded-2xl border border-border bg-card p-6 flex gap-4">
-              <div className="h-11 w-11 shrink-0 rounded-xl bg-primary/10 text-primary flex items-center justify-center">
+            <div key={c.title} className="rounded-sm border border-border bg-card p-6 flex gap-4">
+              <div className="h-11 w-11 shrink-0 rounded-sm bg-primary/10 text-primary flex items-center justify-center">
                 <c.icon className="h-5 w-5" />
               </div>
               <div>
@@ -81,7 +81,7 @@ function ContactPage() {
         </div>
 
         <div className="lg:col-span-7">
-          <div className="rounded-3xl overflow-hidden border border-border shadow-[var(--shadow-card)] aspect-[4/3] lg:aspect-auto lg:h-full min-h-[480px] bg-muted">
+          <div className="rounded-sm overflow-hidden border border-border shadow-[var(--shadow-card)] aspect-[4/3] lg:aspect-auto lg:h-full min-h-[480px] bg-muted">
             <iframe
               title="Clinic location map"
               src="https://www.google.com/maps?q=Vanasthalipuram,+Telangana+500070&output=embed"
@@ -94,7 +94,7 @@ function ContactPage() {
       </section>
 
       <section className="mx-auto max-w-7xl px-6 lg:px-10 pb-24">
-        <div className="rounded-3xl bg-[var(--gradient-primary)] p-10 md:p-14 text-primary-foreground flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
+        <div className="rounded-sm bg-[var(--gradient-primary)] p-10 md:p-14 text-primary-foreground flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
           <div>
             <h2 className="font-display text-3xl md:text-4xl">Need to speak with us today?</h2>
             <p className="mt-2 text-primary-foreground/85 text-sm md:text-base">
@@ -103,7 +103,7 @@ function ContactPage() {
           </div>
           <a
             href="tel:09949337101"
-            className="inline-flex items-center gap-2 rounded-full bg-gold text-foreground px-7 py-3.5 text-sm font-medium hover:opacity-90 transition"
+            className="inline-flex items-center gap-2 rounded-sm bg-gold text-foreground px-6 py-3 text-sm font-medium hover:opacity-90 transition"
           >
             <Phone className="h-4 w-4" /> Call 099493 37101
           </a>

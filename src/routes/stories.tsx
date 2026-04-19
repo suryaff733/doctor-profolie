@@ -71,7 +71,7 @@ function StoriesPage() {
       <section className="mx-auto max-w-7xl px-6 lg:px-10 pb-24">
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {stories.map((s, i) => (
-            <article key={i} className="relative rounded-2xl border border-border bg-card p-7 flex flex-col">
+            <article key={i} className="relative rounded-sm border border-border bg-card p-7 flex flex-col">
               <Quote className="h-8 w-8 text-primary/20 absolute top-6 right-6" />
               <div className="flex text-gold mb-4">
                 {[...Array(5)].map((_, j) => <Star key={j} className="h-4 w-4 fill-current" />)}
