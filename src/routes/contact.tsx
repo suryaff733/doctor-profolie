@@ -36,7 +36,7 @@ function ContactPage() {
       </section>
 
       <section className="mx-auto max-w-7xl px-6 lg:px-10 grid grid-cols-1 lg:grid-cols-12 gap-10 pb-24">
-        <div className="lg:col-span-5 space-y-5">
+        <div className="lg:col-span-5 space-y-5 min-w-0">
           {[
             {
               icon: MapPin,
@@ -82,7 +82,7 @@ function ContactPage() {
           ))}
         </div>
 
-        <div className="lg:col-span-7">
+        <div className="lg:col-span-7 min-w-0">
           <div className="rounded-sm overflow-hidden border border-border shadow-[var(--shadow-card)] aspect-[4/3] lg:aspect-auto lg:h-full min-h-[480px] bg-muted">
             <iframe
               title="Clinic location map"
