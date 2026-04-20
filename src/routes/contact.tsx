@@ -43,7 +43,7 @@ function ContactPage() {
               title: "Address",
               body: (
                 <a
-                  href="https://maps.app.goo.gl/UoF5dBZSc6yf5x4J9"
+                  href="https://maps.app.goo.gl/Kbu3cJyCRBbbCdFaA"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-primary transition-colors"
@@ -88,7 +88,7 @@ function ContactPage() {
         </div>
 
         <div className="lg:col-span-7 min-w-0">
-          <div className="rounded-sm overflow-hidden border border-border shadow-[var(--shadow-card)] aspect-[4/3] lg:aspect-auto lg:h-full min-h-[480px] bg-muted">
+          <div className="rounded-sm overflow-hidden border border-border shadow-[var(--shadow-card)] h-[350px] sm:h-[400px] lg:h-full lg:min-h-[480px] bg-muted">
             <iframe
               title="Clinic location map"
               src="https://www.google.com/maps?q=Vanasthalipuram,+Telangana+500070&output=embed"

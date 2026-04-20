@@ -27,7 +27,7 @@ export function SiteFooter() {
             <li className="flex gap-3">
               <MapPin className="h-4 w-4 mt-0.5 text-primary shrink-0" />
               <a
-                href="https://maps.app.goo.gl/UoF5dBZSc6yf5x4J9"
+                href="https://maps.app.goo.gl/Kbu3cJyCRBbbCdFaA"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-primary transition-colors"
